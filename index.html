@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2ecc71" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Home Organization Assistant</title>
+    <script type="module" crossorigin src="/assets/index-2j0EmVxm.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dk5bt1e7.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/src/sw.js').then(
+            registration => {
+              console.log('ServiceWorker registration successful');
+            },
+            err => {
+              console.log('ServiceWorker registration failed: ', err);
+            }
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
